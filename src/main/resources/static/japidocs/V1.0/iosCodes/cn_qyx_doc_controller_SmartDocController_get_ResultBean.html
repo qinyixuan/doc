@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResultBean</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface ResultBean : NSObject
+
+//code码
+@property (nonatomic, assign) NSString code;
+//消息
+@property (nonatomic, assign) NSString message;
+//数据
+@property (nonatomic, strong) User data;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface User : NSObject
+
+//用户id
+@property (nonatomic, assign) NSString id;
+//用户姓名
+@property (nonatomic, assign) NSString userName;
+//用户密码
+@property (nonatomic, assign) NSString password;
+//车
+@property (nonatomic, strong) Car car;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Car : NSObject
+
+//名字
+@property (nonatomic, assign) NSString name;
+//价格
+@property (nonatomic, assign) NSString price;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>
