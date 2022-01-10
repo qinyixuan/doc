@@ -1,4 +1,13 @@
 {
   "outPath": "./src/main/resources/static/smart-doc",
-  "projectName": "smart-doc接口文档"
+  "projectName": "smart-doc接口文档",
+  "appToken": "7c6979d6b7224cc89eb41c60e05d81b7",
+  "openUrl": "http://localhost:7700/api",
+  "replace": true,
+  "errorCodeDictionaries": [{
+    "title": "title",
+    "enumClassName": "cn.qyx.doc.bean.enums.HttpCodeEnum",
+    "codeField": "code",
+    "descField": "message"
+  }]
 }
